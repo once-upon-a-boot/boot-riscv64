@@ -1,0 +1,1256 @@
+{
+  "events": [
+    {
+      "ts": 1772760827655694000,
+      "label": "+ /home/user/.work/qemu/build/qemu-system-riscv64 -plugin /home/user/.work/qemu/build/..//build/contrib/plugins/libuftrace.so,trace-privilege-level=on -nodefaults -display none -serial mon:stdio -netdev user,id=vnet -device virtio-net-pci,netdev=vnet -M virt -cpu max -smp 1 -m 8G -bios ./out/opensbi.bin -kernel ./out/Image -drive format=raw,file=./out/host.ext4,if=virtio -append 'nokaslr root=/dev/vda rw init=/init -- true' -virtfs local,path=/home/user/.work/qemu-linux-stack/,mount_tag=host,security_model=mapped,readonly=off"
+    },
+    {
+      "ts": 1772760828172676000,
+      "label": ""
+    },
+    {
+      "ts": 1772760828172767000,
+      "label": "OpenSBI v1.8.1"
+    },
+    {
+      "ts": 1772760828173157000,
+      "label": "Build time: 2026-03-06 01:33:06 +0000"
+    },
+    {
+      "ts": 1772760828173646000,
+      "label": "Build compiler: gcc version 14.2.0 (Debian 14.2.0-19)"
+    },
+    {
+      "ts": 1772760828174602000,
+      "label": "   ____                    _____ ____ _____"
+    },
+    {
+      "ts": 1772760828174899000,
+      "label": "  / __ \\                  / ____|  _ \\_   _|"
+    },
+    {
+      "ts": 1772760828175182000,
+      "label": " | |  | |_ __   ___ _ __ | (___ | |_) || |"
+    },
+    {
+      "ts": 1772760828175466000,
+      "label": " | |  | | '_ \\ / _ \\ '_ \\ \\___ \\|  _ < | |"
+    },
+    {
+      "ts": 1772760828175757000,
+      "label": " | |__| | |_) |  __/ | | |____) | |_) || |_"
+    },
+    {
+      "ts": 1772760828176182000,
+      "label": "  \\____/| .__/ \\___|_| |_|_____/|____/_____|"
+    },
+    {
+      "ts": 1772760828176267000,
+      "label": "        | |"
+    },
+    {
+      "ts": 1772760828176352000,
+      "label": "        |_|"
+    },
+    {
+      "ts": 1772760828176365000,
+      "label": ""
+    },
+    {
+      "ts": 1772760828780824000,
+      "label": "Platform Name               : riscv-virtio,qemu"
+    },
+    {
+      "ts": 1772760828781616000,
+      "label": "Platform Features           : medeleg"
+    },
+    {
+      "ts": 1772760828781972000,
+      "label": "Platform HART Count         : 1"
+    },
+    {
+      "ts": 1772760828782405000,
+      "label": "Platform HART Protection    : epmp"
+    },
+    {
+      "ts": 1772760828782846000,
+      "label": "Platform IPI Device         : aclint-mswi"
+    },
+    {
+      "ts": 1772760828783585000,
+      "label": "Platform Timer Device       : aclint-mtimer @ 10000000Hz"
+    },
+    {
+      "ts": 1772760828783972000,
+      "label": "Platform Console Device     : uart8250"
+    },
+    {
+      "ts": 1772760828784345000,
+      "label": "Platform HSM Device         : ---"
+    },
+    {
+      "ts": 1772760828784701000,
+      "label": "Platform PMU Device         : ---"
+    },
+    {
+      "ts": 1772760828801383000,
+      "label": "Platform Reboot Device      : syscon-reboot"
+    },
+    {
+      "ts": 1772760828801875000,
+      "label": "Platform Shutdown Device    : syscon-poweroff"
+    },
+    {
+      "ts": 1772760828802217000,
+      "label": "Platform Suspend Device     : ---"
+    },
+    {
+      "ts": 1772760828802577000,
+      "label": "Platform CPPC Device        : ---"
+    },
+    {
+      "ts": 1772760828803036000,
+      "label": "Firmware Base               : 0x80000000"
+    },
+    {
+      "ts": 1772760828803408000,
+      "label": "Firmware Size               : 577 KB"
+    },
+    {
+      "ts": 1772760828803802000,
+      "label": "Firmware RW Offset          : 0x80000"
+    },
+    {
+      "ts": 1772760828804189000,
+      "label": "Firmware RW Size            : 65 KB"
+    },
+    {
+      "ts": 1772760828804618000,
+      "label": "Firmware Heap Offset        : 0x87000"
+    },
+    {
+      "ts": 1772760828806024000,
+      "label": "Firmware Heap Size          : 37 KB (total), 0 KB (reserved), 12 KB (used), 23 KB (free)"
+    },
+    {
+      "ts": 1772760828806997000,
+      "label": "Firmware Scratch Size       : 4096 B (total), 1464 B (used), 2632 B (free)"
+    },
+    {
+      "ts": 1772760828807494000,
+      "label": "Runtime SBI Version         : 3.0"
+    },
+    {
+      "ts": 1772760828809166000,
+      "label": "Standard SBI Extensions     : ipi,pmu,srst,sse,hsm,rfnc,fwft,time,base,legacy,dbcn,dbtr"
+    },
+    {
+      "ts": 1772760828809980000,
+      "label": "Experimental SBI Extensions : none"
+    },
+    {
+      "ts": 1772760828810022000,
+      "label": ""
+    },
+    {
+      "ts": 1772760828810649000,
+      "label": "Domain0 Name                : root"
+    },
+    {
+      "ts": 1772760828811083000,
+      "label": "Domain0 Boot HART           : 0"
+    },
+    {
+      "ts": 1772760828811818000,
+      "label": "Domain0 HARTs               : 0*"
+    },
+    {
+      "ts": 1772760828813855000,
+      "label": "Domain0 Region00            : 0x0000000080080000-0x000000008009ffff M: (F,R,W) S/U: ()"
+    },
+    {
+      "ts": 1772760828815098000,
+      "label": "Domain0 Region01            : 0x0000000080000000-0x000000008007ffff M: (F,R,X) S/U: ()"
+    },
+    {
+      "ts": 1772760828816458000,
+      "label": "Domain0 Region02            : 0x0000000000100000-0x0000000000100fff M: (I,R,W) S/U: (R,W)"
+    },
+    {
+      "ts": 1772760828817678000,
+      "label": "Domain0 Region03            : 0x0000000010000000-0x0000000010000fff M: (I,R,W) S/U: (R,W)"
+    },
+    {
+      "ts": 1772760828818796000,
+      "label": "Domain0 Region04            : 0x0000000002000000-0x000000000200ffff M: (I,R,W) S/U: ()"
+    },
+    {
+      "ts": 1772760828819983000,
+      "label": "Domain0 Region05            : 0x000000000c400000-0x000000000c5fffff M: (I,R,W) S/U: (R,W)"
+    },
+    {
+      "ts": 1772760828821144000,
+      "label": "Domain0 Region06            : 0x000000000c000000-0x000000000c3fffff M: (I,R,W) S/U: (R,W)"
+    },
+    {
+      "ts": 1772760828822363000,
+      "label": "Domain0 Region07            : 0x0000000000000000-0xffffffffffffffff M: () S/U: (R,W,X)"
+    },
+    {
+      "ts": 1772760828822951000,
+      "label": "Domain0 Next Address        : 0x0000000080200000"
+    },
+    {
+      "ts": 1772760828823532000,
+      "label": "Domain0 Next Arg1           : 0x0000000082200000"
+    },
+    {
+      "ts": 1772760828824043000,
+      "label": "Domain0 Next Mode           : S-mode"
+    },
+    {
+      "ts": 1772760828824489000,
+      "label": "Domain0 SysReset            : yes"
+    },
+    {
+      "ts": 1772760828824921000,
+      "label": "Domain0 SysSuspend          : yes"
+    },
+    {
+      "ts": 1772760828824976000,
+      "label": ""
+    },
+    {
+      "ts": 1772760828825605000,
+      "label": "Boot HART ID                : 0"
+    },
+    {
+      "ts": 1772760828826002000,
+      "label": "Boot HART Domain            : root"
+    },
+    {
+      "ts": 1772760828826540000,
+      "label": "Boot HART Priv Version      : v1.12"
+    },
+    {
+      "ts": 1772760828827542000,
+      "label": "Boot HART Base ISA          : rv64imafdcbvhg"
+    },
+    {
+      "ts": 1772760828831360000,
+      "label": "Boot HART ISA Extensions    : smaia,smepmp,smstateen,sscofpmf,sstc,zicntr,zihpm,zkr,smcntrpmf,zicboz,zicbom,svpbmt,sdtrig,smcsrind,smcdeleg,sscsrind,ssccfg,svadu,smnpm,zicfilp,zicfiss,ssdbltrp,smctr,ssctr,ssstateen"
+    },
+    {
+      "ts": 1772760828831802000,
+      "label": "Boot HART PMP Count         : 16"
+    },
+    {
+      "ts": 1772760828832253000,
+      "label": "Boot HART PMP Granularity   : 2 bits"
+    },
+    {
+      "ts": 1772760828832664000,
+      "label": "Boot HART PMP Address Bits  : 54"
+    },
+    {
+      "ts": 1772760828833318000,
+      "label": "Boot HART MHPM Info         : 16 (0x0007fff8)"
+    },
+    {
+      "ts": 1772760828833788000,
+      "label": "Boot HART Debug Triggers    : 2 triggers"
+    },
+    {
+      "ts": 1772760828834392000,
+      "label": "Boot HART MIDELEG           : 0x0000000000003666"
+    },
+    {
+      "ts": 1772760828834938000,
+      "label": "Boot HART MEDELEG           : 0x0000000000f4b509"
+    },
+    {
+      "ts": 1772760835977826000,
+      "label": "[    0.000000] Booting Linux on hartid 0"
+    },
+    {
+      "ts": 1772760835979319000,
+      "label": "[    0.000000] Linux version 6.17.0-00001-gb44e725eb785 (root@pc) (riscv64-linux-gnu-gcc (Debian 14.2.0-19) 14.2.0, GNU ld (GNU Binutils for Debian) 2.44) #1 SMP Wed Mar  4 23:55:15 UTC 2026"
+    },
+    {
+      "ts": 1772760835979613000,
+      "label": "[    0.000000] random: crng init done"
+    },
+    {
+      "ts": 1772760835979968000,
+      "label": "[    0.000000] Machine model: riscv-virtio,qemu"
+    },
+    {
+      "ts": 1772760835980311000,
+      "label": "[    0.000000] SBI specification v3.0 detected"
+    },
+    {
+      "ts": 1772760835980723000,
+      "label": "[    0.000000] SBI implementation ID=0x1 Version=0x10008"
+    },
+    {
+      "ts": 1772760835981060000,
+      "label": "[    0.000000] SBI TIME extension detected"
+    },
+    {
+      "ts": 1772760835981400000,
+      "label": "[    0.000000] SBI IPI extension detected"
+    },
+    {
+      "ts": 1772760835981757000,
+      "label": "[    0.000000] SBI RFENCE extension detected"
+    },
+    {
+      "ts": 1772760835982103000,
+      "label": "[    0.000000] SBI SRST extension detected"
+    },
+    {
+      "ts": 1772760835982444000,
+      "label": "[    0.000000] SBI DBCN extension detected"
+    },
+    {
+      "ts": 1772760835982786000,
+      "label": "[    0.000000] SBI FWFT extension detected"
+    },
+    {
+      "ts": 1772760835983086000,
+      "label": "[    0.000000] efi: UEFI not found."
+    },
+    {
+      "ts": 1772760835983903000,
+      "label": "[    0.000000] OF: reserved mem: 0x0000000080000000..0x000000008007ffff (512 KiB) nomap non-reusable mmode_resv1@80000000"
+    },
+    {
+      "ts": 1772760835984945000,
+      "label": "[    0.000000] OF: reserved mem: 0x0000000080080000..0x000000008009ffff (128 KiB) nomap non-reusable mmode_resv0@80080000"
+    },
+    {
+      "ts": 1772760835985207000,
+      "label": "[    0.000000] Zone ranges:"
+    },
+    {
+      "ts": 1772760835985731000,
+      "label": "[    0.000000]   DMA32    [mem 0x0000000080000000-0x00000000ffffffff]"
+    },
+    {
+      "ts": 1772760835986250000,
+      "label": "[    0.000000]   Normal   [mem 0x0000000100000000-0x000000027fffffff]"
+    },
+    {
+      "ts": 1772760835986634000,
+      "label": "[    0.000000] Movable zone start for each node"
+    },
+    {
+      "ts": 1772760835986964000,
+      "label": "[    0.000000] Early memory node ranges"
+    },
+    {
+      "ts": 1772760835987482000,
+      "label": "[    0.000000]   node   0: [mem 0x0000000080000000-0x000000008009ffff]"
+    },
+    {
+      "ts": 1772760835988004000,
+      "label": "[    0.000000]   node   0: [mem 0x00000000800a0000-0x000000027fffffff]"
+    },
+    {
+      "ts": 1772760835988576000,
+      "label": "[    0.000000] Initmem setup node 0 [mem 0x0000000080000000-0x000000027fffffff]"
+    },
+    {
+      "ts": 1772760835988922000,
+      "label": "[    0.000000] SBI HSM extension detected"
+    },
+    {
+      "ts": 1772760835989323000,
+      "label": "[    0.000000] riscv: base ISA extensions acdfhimv"
+    },
+    {
+      "ts": 1772760835989705000,
+      "label": "[    0.000000] riscv: ELF capabilities acdfimv"
+    },
+    {
+      "ts": 1772760835990121000,
+      "label": "[    0.000000] Queued spinlock using Ziccrse: enabled"
+    },
+    {
+      "ts": 1772760835990645000,
+      "label": "[    0.000000] percpu: Embedded 21 pages/cpu s46872 r8192 d30952 u86016"
+    },
+    {
+      "ts": 1772760835991283000,
+      "label": "[    0.000000] Kernel command line: nokaslr root=/dev/vda rw init=/init -- true"
+    },
+    {
+      "ts": 1772760835991871000,
+      "label": "[    0.000000] printk: log buffer data + meta data: 131072 + 458752 = 589824 bytes"
+    },
+    {
+      "ts": 1772760835992519000,
+      "label": "[    0.000000] Dentry cache hash table entries: 1048576 (order: 11, 8388608 bytes, linear)"
+    },
+    {
+      "ts": 1772760835993151000,
+      "label": "[    0.000000] Inode-cache hash table entries: 524288 (order: 10, 4194304 bytes, linear)"
+    },
+    {
+      "ts": 1772760835993523000,
+      "label": "[    0.000000] software IO TLB: area num 1."
+    },
+    {
+      "ts": 1772760835994326000,
+      "label": "[    0.000000] software IO TLB: mapped [mem 0x00000000fbfff000-0x00000000fffff000] (64MB)"
+    },
+    {
+      "ts": 1772760835994886000,
+      "label": "[    0.000000] Built 1 zonelists, mobility grouping on.  Total pages: 2097152"
+    },
+    {
+      "ts": 1772760835995471000,
+      "label": "[    0.000000] mem auto-init: stack:all(zero), heap alloc:off, heap free:off"
+    },
+    {
+      "ts": 1772760835996014000,
+      "label": "[    0.000000] SLUB: HWalign=64, Order=0-3, MinObjects=0, CPUs=1, Nodes=1"
+    },
+    {
+      "ts": 1772760835996432000,
+      "label": "[    0.000000] rcu: Hierarchical RCU implementation."
+    },
+    {
+      "ts": 1772760835996841000,
+      "label": "[    0.000000] rcu: \tRCU event tracing is enabled."
+    },
+    {
+      "ts": 1772760835997399000,
+      "label": "[    0.000000] rcu: \tRCU restricting CPUs from NR_CPUS=64 to nr_cpu_ids=1."
+    },
+    {
+      "ts": 1772760835997827000,
+      "label": "[    0.000000] \tTracing variant of Tasks RCU enabled."
+    },
+    {
+      "ts": 1772760835998452000,
+      "label": "[    0.000000] rcu: RCU calculated value of scheduler-enlistment delay is 10 jiffies."
+    },
+    {
+      "ts": 1772760835999013000,
+      "label": "[    0.000000] rcu: Adjusting geometry for rcu_fanout_leaf=16, nr_cpu_ids=1"
+    },
+    {
+      "ts": 1772760835999762000,
+      "label": "[    0.000000] RCU Tasks Trace: Setting shift to 0 and lim to 1 rcu_task_cb_adjust=1 rcu_task_cpu_ids=1."
+    },
+    {
+      "ts": 1772760836000237000,
+      "label": "[    0.000000] NR_IRQS: 64, nr_irqs: 64, preallocated irqs: 0"
+    },
+    {
+      "ts": 1772760836000724000,
+      "label": "[    0.000000] riscv-intc: 64 local interrupts mapped using AIA"
+    },
+    {
+      "ts": 1772760836001193000,
+      "label": "[    0.000000] riscv: providing IPIs using SBI IPI extension"
+    },
+    {
+      "ts": 1772760836001773000,
+      "label": "[    0.000000] rcu: srcu_init: Setting srcu_struct sizes based on contention."
+    },
+    {
+      "ts": 1772760836002637000,
+      "label": "[    0.000000] clocksource: riscv_clocksource: mask: 0xffffffffffffffff max_cycles: 0x24e6a1710, max_idle_ns: 440795202120 ns"
+    },
+    {
+      "ts": 1772760836003289000,
+      "label": "[    0.000136] sched_clock: 64 bits at 10MHz, resolution 100ns, wraps every 4398046511100ns"
+    },
+    {
+      "ts": 1772760836003921000,
+      "label": "[    0.000519] riscv-timer: Timer interrupt in S-mode is available via sstc extension"
+    },
+    {
+      "ts": 1772760836004486000,
+      "label": "[    0.018395] Console: colour dummy device 80x25"
+    },
+    {
+      "ts": 1772760836004910000,
+      "label": "[    0.019517] printk: legacy console [tty0] enabled"
+    },
+    {
+      "ts": 1772760836005728000,
+      "label": "[    0.038600] Calibrating delay loop (skipped), value calculated using timer frequency.. 20.00 BogoMIPS (lpj=100000)"
+    },
+    {
+      "ts": 1772760836006138000,
+      "label": "[    0.039422] pid_max: default: 32768 minimum: 301"
+    },
+    {
+      "ts": 1772760836006524000,
+      "label": "[    0.044993] LSM: initializing lsm=capability"
+    },
+    {
+      "ts": 1772760836007142000,
+      "label": "[    0.050811] Mount-cache hash table entries: 16384 (order: 5, 131072 bytes, linear)"
+    },
+    {
+      "ts": 1772760836007808000,
+      "label": "[    0.051469] Mountpoint-cache hash table entries: 16384 (order: 5, 131072 bytes, linear)"
+    },
+    {
+      "ts": 1772760836008203000,
+      "label": "[    0.139248] riscv: ELF compat mode supported"
+    },
+    {
+      "ts": 1772760836008677000,
+      "label": "[    0.139789] ASID allocator using 16 bits (65536 entries)"
+    },
+    {
+      "ts": 1772760836009115000,
+      "label": "[    0.143266] rcu: Hierarchical SRCU implementation."
+    },
+    {
+      "ts": 1772760836009590000,
+      "label": "[    0.143630] rcu: \tMax phase no-delay instances is 1000."
+    },
+    {
+      "ts": 1772760836010003000,
+      "label": "[    0.154252] EFI services will not be available."
+    },
+    {
+      "ts": 1772760836010420000,
+      "label": "[    0.159001] smp: Bringing up secondary CPUs ..."
+    },
+    {
+      "ts": 1772760836010801000,
+      "label": "[    0.162032] smp: Brought up 1 node, 1 CPU"
+    },
+    {
+      "ts": 1772760836011900000,
+      "label": "[    0.169995] Memory: 8131484K/8388608K available (10487K kernel code, 4961K rwdata, 6144K rodata, 2295K init, 387K bss, 253488K reserved, 0K cma-reserved)"
+    },
+    {
+      "ts": 1772760836012241000,
+      "label": "[    0.204015] devtmpfs: initialized"
+    },
+    {
+      "ts": 1772760836013052000,
+      "label": "[    0.246543] clocksource: jiffies: mask: 0xffffffff max_cycles: 0xffffffff, max_idle_ns: 19112604462750000 ns"
+    },
+    {
+      "ts": 1772760836013691000,
+      "label": "[    0.247435] posixtimers hash table entries: 512 (order: 1, 8192 bytes, linear)"
+    },
+    {
+      "ts": 1772760836014606000,
+      "label": "[    0.248420] futex hash table entries: 256 (16384 bytes on 1 NUMA nodes, total 16 KiB, linear)."
+    },
+    {
+      "ts": 1772760836015106000,
+      "label": "[    0.256735] pinctrl core: initialized pinctrl subsystem"
+    },
+    {
+      "ts": 1772760836015505000,
+      "label": "[    0.277219] DMI not present or invalid."
+    },
+    {
+      "ts": 1772760836016064000,
+      "label": "[    0.282823] NET: Registered PF_NETLINK/PF_ROUTE protocol family"
+    },
+    {
+      "ts": 1772760836016736000,
+      "label": "[    0.296312] DMA: preallocated 1024 KiB GFP_KERNEL pool for atomic allocations"
+    },
+    {
+      "ts": 1772760836017465000,
+      "label": "[    0.299379] DMA: preallocated 1024 KiB GFP_KERNEL|GFP_DMA32 pool for atomic allocations"
+    },
+    {
+      "ts": 1772760836017993000,
+      "label": "[    0.300592] audit: initializing netlink subsys (disabled)"
+    },
+    {
+      "ts": 1772760836018554000,
+      "label": "[    0.312927] thermal_sys: Registered thermal governor 'step_wise'"
+    },
+    {
+      "ts": 1772760836019253000,
+      "label": "[    0.314747] audit: type=2000 audit(0.290:1): state=initialized audit_enabled=0 res=1"
+    },
+    {
+      "ts": 1772760836019644000,
+      "label": "[    0.316567] cpuidle: using governor menu"
+    },
+    {
+      "ts": 1772760836020161000,
+      "label": "[    0.322785] SBI misaligned access exception delegation ok"
+    },
+    {
+      "ts": 1772760836020999000,
+      "label": "[    0.383907] cpu0: Ratio of byte access time to unaligned word access is 8.03, unaligned accesses are fast"
+    },
+    {
+      "ts": 1772760836021937000,
+      "label": "[    0.662890] cpu0: Ratio of vector byte access time to vector unaligned word access is 4.32, unaligned accesses are fast"
+    },
+    {
+      "ts": 1772760836022577000,
+      "label": "[    0.745394] HugeTLB: allocation took 0ms with hugepage_allocation_threads=1"
+    },
+    {
+      "ts": 1772760836023207000,
+      "label": "[    0.745974] HugeTLB: allocation took 0ms with hugepage_allocation_threads=1"
+    },
+    {
+      "ts": 1772760836023820000,
+      "label": "[    0.747304] HugeTLB: registered 64.0 KiB page size, pre-allocated 0 pages"
+    },
+    {
+      "ts": 1772760836024557000,
+      "label": "[    0.747757] HugeTLB: 0 KiB vmemmap can be freed for a 64.0 KiB page"
+    },
+    {
+      "ts": 1772760836025156000,
+      "label": "[    0.748231] HugeTLB: registered 2.00 MiB page size, pre-allocated 0 pages"
+    },
+    {
+      "ts": 1772760836025726000,
+      "label": "[    0.748868] HugeTLB: 28 KiB vmemmap can be freed for a 2.00 MiB page"
+    },
+    {
+      "ts": 1772760836026105000,
+      "label": "[    0.775748] ACPI: Interpreter disabled."
+    },
+    {
+      "ts": 1772760836026553000,
+      "label": "[    0.782388] iommu: Default domain type: Translated"
+    },
+    {
+      "ts": 1772760836027110000,
+      "label": "[    0.782800] iommu: DMA domain TLB invalidation policy: strict mode"
+    },
+    {
+      "ts": 1772760836027481000,
+      "label": "[    0.802794] SCSI subsystem initialized"
+    },
+    {
+      "ts": 1772760836028029000,
+      "label": "[    0.811329] usbcore: registered new interface driver usbfs"
+    },
+    {
+      "ts": 1772760836028520000,
+      "label": "[    0.812734] usbcore: registered new interface driver hub"
+    },
+    {
+      "ts": 1772760836028987000,
+      "label": "[    0.813677] usbcore: registered new device driver usb"
+    },
+    {
+      "ts": 1772760836029551000,
+      "label": "[    0.825077] Advanced Linux Sound Architecture Driver Initialized."
+    },
+    {
+      "ts": 1772760836029849000,
+      "label": "[    0.871380] vgaarb: loaded"
+    },
+    {
+      "ts": 1772760836030406000,
+      "label": "[    0.883394] clocksource: Switched to clocksource riscv_clocksource"
+    },
+    {
+      "ts": 1772760836030760000,
+      "label": "[    0.894372] pnp: PnP ACPI: disabled"
+    },
+    {
+      "ts": 1772760836031211000,
+      "label": "[    1.038453] NET: Registered PF_INET protocol family"
+    },
+    {
+      "ts": 1772760836031863000,
+      "label": "[    1.046688] IP idents hash table entries: 131072 (order: 8, 1048576 bytes, linear)"
+    },
+    {
+      "ts": 1772760836032593000,
+      "label": "[    1.115020] tcp_listen_portaddr_hash hash table entries: 4096 (order: 4, 65536 bytes, linear)"
+    },
+    {
+      "ts": 1772760836033268000,
+      "label": "[    1.116385] Table-perturb hash table entries: 65536 (order: 6, 262144 bytes, linear)"
+    },
+    {
+      "ts": 1772760836034196000,
+      "label": "[    1.117132] TCP established hash table entries: 65536 (order: 7, 524288 bytes, linear)"
+    },
+    {
+      "ts": 1772760836034862000,
+      "label": "[    1.128790] TCP bind hash table entries: 65536 (order: 9, 2097152 bytes, linear)"
+    },
+    {
+      "ts": 1772760836035458000,
+      "label": "[    1.142401] TCP: Hash tables configured (established 65536 bind 65536)"
+    },
+    {
+      "ts": 1772760836036053000,
+      "label": "[    1.146441] UDP hash table entries: 4096 (order: 6, 262144 bytes, linear)"
+    },
+    {
+      "ts": 1772760836036677000,
+      "label": "[    1.149137] UDP-Lite hash table entries: 4096 (order: 6, 262144 bytes, linear)"
+    },
+    {
+      "ts": 1772760836037185000,
+      "label": "[    1.154472] NET: Registered PF_UNIX/PF_LOCAL protocol family"
+    },
+    {
+      "ts": 1772760836037724000,
+      "label": "[    1.167331] RPC: Registered named UNIX socket transport module."
+    },
+    {
+      "ts": 1772760836038165000,
+      "label": "[    1.167792] RPC: Registered udp transport module."
+    },
+    {
+      "ts": 1772760836038604000,
+      "label": "[    1.168113] RPC: Registered tcp transport module."
+    },
+    {
+      "ts": 1772760836039100000,
+      "label": "[    1.168440] RPC: Registered tcp-with-tls transport module."
+    },
+    {
+      "ts": 1772760836039657000,
+      "label": "[    1.168774] RPC: Registered tcp NFSv4.1 backchannel transport module."
+    },
+    {
+      "ts": 1772760836040019000,
+      "label": "[    1.169387] PCI: CLS 0 bytes, default 64"
+    },
+    {
+      "ts": 1772760836040570000,
+      "label": "[    1.196928] workingset: timestamp_bits=46 max_order=21 bucket_order=0"
+    },
+    {
+      "ts": 1772760836041016000,
+      "label": "[    1.211953] NFS: Registering the id_resolver key type"
+    },
+    {
+      "ts": 1772760836041409000,
+      "label": "[    1.212929] Key type id_resolver registered"
+    },
+    {
+      "ts": 1772760836041784000,
+      "label": "[    1.213295] Key type id_legacy registered"
+    },
+    {
+      "ts": 1772760836042346000,
+      "label": "[    1.214340] nfs4filelayout_init: NFSv4 File Layout Driver Registering..."
+    },
+    {
+      "ts": 1772760836042953000,
+      "label": "[    1.214882] nfs4flexfilelayout_init: NFSv4 Flexfile Layout Driver Registering..."
+    },
+    {
+      "ts": 1772760836043445000,
+      "label": "[    1.217951] 9p: Installing v9fs 9p2000 file system support"
+    },
+    {
+      "ts": 1772760836044308000,
+      "label": "[    1.223951] Block layer SCSI generic (bsg) driver version 0.4 loaded (major 244)"
+    },
+    {
+      "ts": 1772760836044709000,
+      "label": "[    1.225960] io scheduler mq-deadline registered"
+    },
+    {
+      "ts": 1772760836045068000,
+      "label": "[    1.226459] io scheduler kyber registered"
+    },
+    {
+      "ts": 1772760836045432000,
+      "label": "[    1.227414] io scheduler bfq registered"
+    },
+    {
+      "ts": 1772760836046092000,
+      "label": "[    1.253804] riscv-plic: plic@c000000: mapped 95 interrupts with 1 handlers for 2 contexts."
+    },
+    {
+      "ts": 1772760836046684000,
+      "label": "[    1.281972] pci-host-generic 30000000.pci: host bridge /soc/pci@30000000 ranges:"
+    },
+    {
+      "ts": 1772760836047364000,
+      "label": "[    1.284547] pci-host-generic 30000000.pci:       IO 0x0003000000..0x000300ffff -> 0x0000000000"
+    },
+    {
+      "ts": 1772760836048057000,
+      "label": "[    1.286580] pci-host-generic 30000000.pci:      MEM 0x0040000000..0x007fffffff -> 0x0040000000"
+    },
+    {
+      "ts": 1772760836048740000,
+      "label": "[    1.287446] pci-host-generic 30000000.pci:      MEM 0x0400000000..0x07ffffffff -> 0x0400000000"
+    },
+    {
+      "ts": 1772760836049386000,
+      "label": "[    1.289619] pci-host-generic 30000000.pci: Memory resource size exceeds max for 32 bits"
+    },
+    {
+      "ts": 1772760836050077000,
+      "label": "[    1.291640] pci-host-generic 30000000.pci: ECAM at [mem 0x30000000-0x3fffffff] for [bus 00-ff]"
+    },
+    {
+      "ts": 1772760836050654000,
+      "label": "[    1.296956] pci-host-generic 30000000.pci: PCI host bridge to bus 0000:00"
+    },
+    {
+      "ts": 1772760836051135000,
+      "label": "[    1.297923] pci_bus 0000:00: root bus resource [bus 00-ff]"
+    },
+    {
+      "ts": 1772760836051653000,
+      "label": "[    1.298471] pci_bus 0000:00: root bus resource [io  0x0000-0xffff]"
+    },
+    {
+      "ts": 1772760836052236000,
+      "label": "[    1.299005] pci_bus 0000:00: root bus resource [mem 0x40000000-0x7fffffff]"
+    },
+    {
+      "ts": 1772760836052812000,
+      "label": "[    1.299479] pci_bus 0000:00: root bus resource [mem 0x400000000-0x7ffffffff]"
+    },
+    {
+      "ts": 1772760836053496000,
+      "label": "[    1.303022] pci 0000:00:00.0: [1b36:0008] type 00 class 0x060000 conventional PCI endpoint"
+    },
+    {
+      "ts": 1772760836054321000,
+      "label": "[    1.314585] pci 0000:00:01.0: [1af4:1000] type 00 class 0x020000 conventional PCI endpoint"
+    },
+    {
+      "ts": 1772760836054778000,
+      "label": "[    1.315821] pci 0000:00:01.0: BAR 0 [io  0x0000-0x001f]"
+    },
+    {
+      "ts": 1772760836055272000,
+      "label": "[    1.316362] pci 0000:00:01.0: BAR 1 [mem 0x00000000-0x00000fff]"
+    },
+    {
+      "ts": 1772760836055825000,
+      "label": "[    1.316896] pci 0000:00:01.0: BAR 4 [mem 0x00000000-0x00003fff 64bit pref]"
+    },
+    {
+      "ts": 1772760836056333000,
+      "label": "[    1.317554] pci 0000:00:01.0: ROM [mem 0x00000000-0x0003ffff pref]"
+    },
+    {
+      "ts": 1772760836056990000,
+      "label": "[    1.321435] pci 0000:00:02.0: [1af4:1009] type 00 class 0x000200 conventional PCI endpoint"
+    },
+    {
+      "ts": 1772760836057439000,
+      "label": "[    1.322299] pci 0000:00:02.0: BAR 0 [io  0x0000-0x001f]"
+    },
+    {
+      "ts": 1772760836057936000,
+      "label": "[    1.322756] pci 0000:00:02.0: BAR 1 [mem 0x00000000-0x00000fff]"
+    },
+    {
+      "ts": 1772760836058494000,
+      "label": "[    1.323247] pci 0000:00:02.0: BAR 4 [mem 0x00000000-0x00003fff 64bit pref]"
+    },
+    {
+      "ts": 1772760836059144000,
+      "label": "[    1.326652] pci 0000:00:03.0: [1af4:1001] type 00 class 0x010000 conventional PCI endpoint"
+    },
+    {
+      "ts": 1772760836059584000,
+      "label": "[    1.327519] pci 0000:00:03.0: BAR 0 [io  0x0000-0x007f]"
+    },
+    {
+      "ts": 1772760836060081000,
+      "label": "[    1.327974] pci 0000:00:03.0: BAR 1 [mem 0x00000000-0x00000fff]"
+    },
+    {
+      "ts": 1772760836060645000,
+      "label": "[    1.328483] pci 0000:00:03.0: BAR 4 [mem 0x00000000-0x00003fff 64bit pref]"
+    },
+    {
+      "ts": 1772760836061223000,
+      "label": "[    1.342631] pci 0000:00:01.0: ROM [mem 0x40000000-0x4003ffff pref]: assigned"
+    },
+    {
+      "ts": 1772760836061870000,
+      "label": "[    1.343682] pci 0000:00:01.0: BAR 4 [mem 0x400000000-0x400003fff 64bit pref]: assigned"
+    },
+    {
+      "ts": 1772760836062511000,
+      "label": "[    1.344680] pci 0000:00:02.0: BAR 4 [mem 0x400004000-0x400007fff 64bit pref]: assigned"
+    },
+    {
+      "ts": 1772760836063150000,
+      "label": "[    1.345476] pci 0000:00:03.0: BAR 4 [mem 0x400008000-0x40000bfff 64bit pref]: assigned"
+    },
+    {
+      "ts": 1772760836063723000,
+      "label": "[    1.346187] pci 0000:00:01.0: BAR 1 [mem 0x40040000-0x40040fff]: assigned"
+    },
+    {
+      "ts": 1772760836064458000,
+      "label": "[    1.346754] pci 0000:00:02.0: BAR 1 [mem 0x40041000-0x40041fff]: assigned"
+    },
+    {
+      "ts": 1772760836065029000,
+      "label": "[    1.347319] pci 0000:00:03.0: BAR 1 [mem 0x40042000-0x40042fff]: assigned"
+    },
+    {
+      "ts": 1772760836065571000,
+      "label": "[    1.347938] pci 0000:00:03.0: BAR 0 [io  0x0080-0x00ff]: assigned"
+    },
+    {
+      "ts": 1772760836066094000,
+      "label": "[    1.348524] pci 0000:00:01.0: BAR 0 [io  0x0020-0x003f]: assigned"
+    },
+    {
+      "ts": 1772760836066632000,
+      "label": "[    1.349092] pci 0000:00:02.0: BAR 0 [io  0x0040-0x005f]: assigned"
+    },
+    {
+      "ts": 1772760836067162000,
+      "label": "[    1.350516] pci_bus 0000:00: resource 4 [io  0x0000-0xffff]"
+    },
+    {
+      "ts": 1772760836067688000,
+      "label": "[    1.351065] pci_bus 0000:00: resource 5 [mem 0x40000000-0x7fffffff]"
+    },
+    {
+      "ts": 1772760836068251000,
+      "label": "[    1.351586] pci_bus 0000:00: resource 6 [mem 0x400000000-0x7ffffffff]"
+    },
+    {
+      "ts": 1772760836068804000,
+      "label": "[    1.414140] virtio-pci 0000:00:01.0: enabling device (0000 -> 0003)"
+    },
+    {
+      "ts": 1772760836069354000,
+      "label": "[    1.423141] virtio-pci 0000:00:02.0: enabling device (0000 -> 0003)"
+    },
+    {
+      "ts": 1772760836069917000,
+      "label": "[    1.428590] virtio-pci 0000:00:03.0: enabling device (0000 -> 0003)"
+    },
+    {
+      "ts": 1772760836070484000,
+      "label": "[    2.230338] Serial: 8250/16550 driver, 4 ports, IRQ sharing disabled"
+    },
+    {
+      "ts": 1772760836071216000,
+      "label": "[    2.296011] 10000000.serial: ttyS0 at MMIO 0x10000000 (irq = 15, base_baud = 230400) is a 16550A"
+    },
+    {
+      "ts": 1772760836071661000,
+      "label": "[    2.313403] printk: legacy console [ttyS0] enabled"
+    },
+    {
+      "ts": 1772760836195577000,
+      "label": "[    2.531578] loop: module loaded"
+    },
+    {
+      "ts": 1772760836199256000,
+      "label": "[    2.535052] virtio_blk virtio2: 1/0/0 default/read/poll queues"
+    },
+    {
+      "ts": 1772760836211967000,
+      "label": "[    2.547513] virtio_blk virtio2: [vda] 20971520 512-byte logical blocks (10.7 GB/10.0 GiB)"
+    },
+    {
+      "ts": 1772760836367189000,
+      "label": "[    2.703141] e1000e: Intel(R) PRO/1000 Network Driver"
+    },
+    {
+      "ts": 1772760836368122000,
+      "label": "[    2.704032] e1000e: Copyright(c) 1999 - 2015 Intel Corporation."
+    },
+    {
+      "ts": 1772760836386092000,
+      "label": "[    2.721965] usbcore: registered new interface driver uas"
+    },
+    {
+      "ts": 1772760836388210000,
+      "label": "[    2.724052] usbcore: registered new interface driver usb-storage"
+    },
+    {
+      "ts": 1772760836392679000,
+      "label": "[    2.728603] mousedev: PS/2 mouse device common for all mice"
+    },
+    {
+      "ts": 1772760836406159000,
+      "label": "[    2.742035] goldfish_rtc 101000.rtc: registered as rtc0"
+    },
+    {
+      "ts": 1772760836409625000,
+      "label": "[    2.744474] goldfish_rtc 101000.rtc: setting system clock to 2026-03-06T01:33:55 UTC (1772760835)"
+    },
+    {
+      "ts": 1772760836448370000,
+      "label": "[    2.784215] sdhci: Secure Digital Host Controller Interface driver"
+    },
+    {
+      "ts": 1772760836449042000,
+      "label": "[    2.785125] sdhci: Copyright(c) Pierre Ossman"
+    },
+    {
+      "ts": 1772760836450399000,
+      "label": "[    2.786348] Synopsys Designware Multimedia Card Interface Driver"
+    },
+    {
+      "ts": 1772760836456842000,
+      "label": "[    2.792786] sdhci-pltfm: SDHCI platform and OF driver helper"
+    },
+    {
+      "ts": 1772760836475548000,
+      "label": "[    2.811455] usbcore: registered new interface driver usbhid"
+    },
+    {
+      "ts": 1772760836476292000,
+      "label": "[    2.812395] usbhid: USB HID core driver"
+    },
+    {
+      "ts": 1772760836482743000,
+      "label": "[    2.818706] riscv-pmu-sbi: SBI PMU extension is available"
+    },
+    {
+      "ts": 1772760836486168000,
+      "label": "[    2.822051] riscv-pmu-sbi: 16 firmware and 18 hardware counters"
+    },
+    {
+      "ts": 1772760836515819000,
+      "label": "[    2.851779] NET: Registered PF_INET6 protocol family"
+    },
+    {
+      "ts": 1772760836538215000,
+      "label": "[    2.874261] Segment Routing with IPv6"
+    },
+    {
+      "ts": 1772760836539824000,
+      "label": "[    2.875864] In-situ OAM (IOAM) with IPv6"
+    },
+    {
+      "ts": 1772760836542512000,
+      "label": "[    2.878375] sit: IPv6, IPv4 and MPLS over IPv4 tunneling driver"
+    },
+    {
+      "ts": 1772760836556465000,
+      "label": "[    2.892346] NET: Registered PF_PACKET protocol family"
+    },
+    {
+      "ts": 1772760836558971000,
+      "label": "[    2.894973] 9pnet: Installing 9P2000 support"
+    },
+    {
+      "ts": 1772760836563325000,
+      "label": "[    2.899287] Key type dns_resolver registered"
+    },
+    {
+      "ts": 1772760836992402000,
+      "label": "[    3.328434] clk: Disabling unused clocks"
+    },
+    {
+      "ts": 1772760836993656000,
+      "label": "[    3.329645] PM: genpd: Disabling unused power domains"
+    },
+    {
+      "ts": 1772760836994767000,
+      "label": "[    3.330934] ALSA device list:"
+    },
+    {
+      "ts": 1772760836995549000,
+      "label": "[    3.331686]   No soundcards found."
+    },
+    {
+      "ts": 1772760837012418000,
+      "label": "[    3.348241] check access for rdinit=/init failed: -2, ignoring"
+    },
+    {
+      "ts": 1772760837614973000,
+      "label": "[    3.950352] EXT4-fs (vda): mounted filesystem 7839c13c-328d-4383-b760-15cd52355f69 r/w with ordered data mode. Quota mode: disabled."
+    },
+    {
+      "ts": 1772760837620029000,
+      "label": "[    3.956108] VFS: Mounted root (ext4 filesystem) on device 254:0."
+    },
+    {
+      "ts": 1772760837626545000,
+      "label": "[    3.962807] devtmpfs: mounted"
+    },
+    {
+      "ts": 1772760837680801000,
+      "label": "[    4.016812] Freeing unused kernel image (initmem) memory: 2292K"
+    },
+    {
+      "ts": 1772760837684189000,
+      "label": "[    4.020409] Run /init as init process"
+    },
+    {
+      "ts": 1772760838289683000,
+      "label": "+ export PATH=/usr/bin:/bin:/sbin"
+    },
+    {
+      "ts": 1772760838292036000,
+      "label": "+ PATH=/usr/bin:/bin:/sbin"
+    },
+    {
+      "ts": 1772760838298024000,
+      "label": "+ mount -t proc none /proc"
+    },
+    {
+      "ts": 1772760838548310000,
+      "label": "+ mount -t sysfs none /sys"
+    },
+    {
+      "ts": 1772760838654260000,
+      "label": "+ mkdir /dev/pts"
+    },
+    {
+      "ts": 1772760838725793000,
+      "label": "+ mount devpts /dev/pts -t devpts"
+    },
+    {
+      "ts": 1772760838827371000,
+      "label": "+ ln -s /proc/self/fd /dev/fd"
+    },
+    {
+      "ts": 1772760838882585000,
+      "label": "+ ln -s /proc/self/fd/0 /dev/stdin"
+    },
+    {
+      "ts": 1772760838930815000,
+      "label": "+ ln -s /proc/self/fd/1 /dev/stdout"
+    },
+    {
+      "ts": 1772760838979630000,
+      "label": "+ ln -s /proc/self/fd/2 /dev/stderr"
+    },
+    {
+      "ts": 1772760839028772000,
+      "label": "+ hostname -F /hostname"
+    },
+    {
+      "ts": 1772760839086732000,
+      "label": "+ mount -t 9p -o trans=virtio host /host"
+    },
+    {
+      "ts": 1772760839437025000,
+      "label": "+ ifconfig -a"
+    },
+    {
+      "ts": 1772760839443907000,
+      "label": "+ grep -q eth0"
+    },
+    {
+      "ts": 1772760840077891000,
+      "label": "+ ifconfig eth0 up"
+    },
+    {
+      "ts": 1772760840290549000,
+      "label": "+ ifconfig eth0 10.0.2.15 netmask 255.255.255.0 broadcast 10.0.2.255"
+    },
+    {
+      "ts": 1772760840378680000,
+      "label": "+ route add default gw 10.0.2.2"
+    },
+    {
+      "ts": 1772760840455665000,
+      "label": "+ '[' 1 -ge 1 ']'"
+    },
+    {
+      "ts": 1772760840475275000,
+      "label": "+ true"
+    },
+    {
+      "ts": 1772760840477772000,
+      "label": "+ sync"
+    },
+    {
+      "ts": 1772760840591118000,
+      "label": "+ sleep 0.1"
+    },
+    {
+      "ts": 1772760840742993000,
+      "label": "+ echo o"
+    },
+    {
+      "ts": 1772760840749869000,
+      "label": "[    7.086064] sysrq: Power Off"
+    },
+    {
+      "ts": 1772760840762703000,
+      "label": "[    7.098905] reboot: Power down"
+    }
+  ],
+  "traces": [
+    {
+      "start": 1772760827655694000,
+      "end": 1772760828655694000
+    },
+    {
+      "start": 1772760828155694000,
+      "end": 1772760829155694000
+    },
+    {
+      "start": 1772760828655694000,
+      "end": 1772760829655694000
+    },
+    {
+      "start": 1772760835155694000,
+      "end": 1772760836155694000
+    },
+    {
+      "start": 1772760835655694000,
+      "end": 1772760836655694000
+    },
+    {
+      "start": 1772760836155694000,
+      "end": 1772760837155694000
+    },
+    {
+      "start": 1772760836655694000,
+      "end": 1772760837655694000
+    },
+    {
+      "start": 1772760837155694000,
+      "end": 1772760838155694000
+    },
+    {
+      "start": 1772760837655694000,
+      "end": 1772760838655694000
+    },
+    {
+      "start": 1772760838155694000,
+      "end": 1772760839155694000
+    },
+    {
+      "start": 1772760838655694000,
+      "end": 1772760839655694000
+    },
+    {
+      "start": 1772760839155694000,
+      "end": 1772760840155694000
+    },
+    {
+      "start": 1772760839655694000,
+      "end": 1772760840655694000
+    },
+    {
+      "start": 1772760840155694000,
+      "end": 1772760841155694000
+    },
+    {
+      "start": 1772760840655694000,
+      "end": 1772760841655694000
+    }
+  ],
+  "trace_url": "traces",
+  "src_url": "sources"
+}
